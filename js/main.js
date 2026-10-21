@@ -33,7 +33,7 @@
   var useBtn = document.getElementById('usePrompt');
   var promptText = document.querySelector('.prompt-code');
   if (useBtn && promptText) {
-    var url = '/studio.html?prompt=' + encodeURIComponent(promptText.textContent.trim());
+    var url = 'studio.html?prompt=' + encodeURIComponent(promptText.textContent.trim());
     useBtn.setAttribute('href', url);
   }
 
