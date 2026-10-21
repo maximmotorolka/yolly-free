@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yolly AI — бесплатно: нейросети для видео, картинок и музыки — без VPN</title>
+<meta name="description" content="Полностью бесплатная версия Yolly AI: генерация видео, картинок и музыки нейросетями — без VPN, без оплаты, без кредитов и без водяных знаков. Veo 3, Kling, Seedance, Flux и другие модели.">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="min-h-screen overflow-x-hidden">
+
+<!-- ======================= HEADER ======================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="/">
+      <img src="/logo.png" alt="Yolly AI" class="logo-img">
+      <span class="logo-name">Yolly AI</span>
+      <span class="logo-free">FREE</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <div class="nav-item has-drop">
+        <button class="nav-link nav-drop-toggle" type="button">Видео ИИ
+          <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="mega">
+          <div class="mega-col">
+            <div class="mega-title">Генераторы</div>
+            <a href="/studio.html">ИИ-генератор видео</a>
+            <a href="/studio.html">ИИ-генератор анимации</a>
+            <a href="/studio.html">ИИ-генератор музыкальных клипов <span class="chip-new">НОВОЕ</span></a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-title">Модели</div>
+            <a href="/studio.html">Minimax H3 <span class="chip-new">НОВОЕ</span></a>
+            <a href="/studio.html">Seedance 2 <span class="chip-new">НОВОЕ</span></a>
+            <a href="/studio.html">Seedance 2 Mini <span class="chip-new">НОВОЕ</span></a>
+            <a href="/studio.html">Seedance 1.5 Pro</a>
+            <a href="/studio.html">Veo 3.1</a>
+            <a href="/studio.html">Sora 2</a>
+            <a href="/studio.html">Grok Imagine</a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-title">Редактирование и синхронизация</div>
+            <a href="/studio.html">Имитация движений</a>
+            <a href="/studio.html">ИИ-синхронизация губ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item has-drop">
+        <button class="nav-link nav-drop-toggle" type="button">Изображения ИИ
+          <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="mega">
+          <div class="mega-col">
+            <div class="mega-title">Генераторы</div>
+            <a href="/studio.html">ИИ-генератор изображений</a>
+            <a href="/studio.html">Библиотека промптов <span class="chip-new">НОВОЕ</span></a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-title">Модели</div>
+            <a href="/studio.html">Nano Banana 2.1</a>
+            <a href="/studio.html">Nano Banana 2</a>
+            <a href="/studio.html">GPT Image 2</a>
+            <a href="/studio.html">Nano Banana Pro</a>
+            <a href="/studio.html">Nano Banana</a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-title">Инструменты</div>
+            <a href="/studio.html">Удаление фона <span class="chip-new">НОВОЕ</span></a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-title">Эффекты</div>
+            <a href="/studio.html">3D-фигурки</a>
+            <a href="/studio.html">ИИ-маскот</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item has-drop">
+        <button class="nav-link nav-drop-toggle" type="button">Музыка ИИ <span class="chip-new">НОВОЕ</span>
+          <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="mega">
+          <div class="mega-col">
+            <div class="mega-title">Генераторы</div>
+            <a href="/studio.html">ИИ-генератор музыки</a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-title">Инструменты</div>
+            <a href="/studio.html">ИИ-удаление вокала</a>
+            <a href="/studio.html">ИИ-мастеринг <span class="chip-new">НОВОЕ</span></a>
+            <a href="/studio.html">ИИ-генератор музыкальных клипов <span class="chip-new">НОВОЕ</span></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn-invite" href="#pricing" title="Пригласить">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 12v8a1 1 0 01-1 1h-6v-9h7zm-9 9H5a1 1 0 01-1-1v-8h7v9zM21 7a1 1 0 011 1v2a1 1 0 01-1 1h-9V7h3.5a2.5 2.5 0 10-2.45-3H12l.9-.02A2.5 2.5 0 108.5 7H12v4H3a1 1 0 01-1-1V8a1 1 0 011-1h1.05A4.5 4.5 0 0112 2.2 4.5 4.5 0 0119.95 7H21z"/></svg>
+        <span class="hide-xs">Пригласить</span>
+      </a>
+      <a class="btn-free" href="#pricing">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm-.6 2h15.2c.4 0 .8.3.8.7l-.8 2.6c-.1.2-.3.4-.6.4H5c-.3 0-.5-.2-.6-.4l-.8-2.6c0-.4.4-.7.8-.7z"/></svg>
+        <span class="hide-xs">Бесплатно</span>
+      </a>
+      <a class="btn-login" href="/studio.html">Начать бесплатно</a>
+      <button class="burger" id="burger" type="button" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="min-h-screen pt-16">
+<main class="overflow-x-hidden">
+
+  <!-- hero background video -->
+  <div class="hero-bg">
+    <video src="https://public.yolly.ai/background-1080.mp4" autoplay muted loop playsinline preload="auto"
+           style="position:absolute;top:50%;left:50%;width:120%;height:120%;transform:translate(-50%,-50%);object-fit:cover;min-width:100vw;min-height:100vh"></video>
+    <div class="hero-bg-overlay"></div>
+  </div>
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span> 100% бесплатно · Без VPN · Без подписки · Без водяных знаков
+      </div>
+      <h1 class="hero-title">Yolly AI <span class="grad-yellow">для России — бесплатно</span>, без VPN</h1>
+      <div class="hero-points">
+        <div>• Один текстовый запрос — и нейросеть создаёт <b class="yl">кинематографичное видео</b>, картинку любого стиля или <b class="yl">песню с вокалом</b>.</div>
+        <div>• Veo 3, Kling, Seedance, Flux и другие топовые модели — работают из России <b class="yl">без VPN</b> и <b class="yl">без оплаты</b>: без кредитов, без подписки, без водяных знаков.</div>
+      </div>
+      <div class="hero-cards">
+        <a class="hero-flow-card" style="--c1:#a855f7;--c2:#ec4899;--accent:#c084fc" href="/studio.html">
+          <div class="hero-flow-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" style="color:#c084fc"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+            <span>AI Видео</span>
+          </div>
+        </a>
+        <a class="hero-flow-card" style="--c1:#22d3ee;--c2:#3b82f6;--accent:#38bdf8" href="/studio.html">
+          <div class="hero-flow-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" style="color:#38bdf8"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            <span>AI Изображения</span>
+          </div>
+        </a>
+        <a class="hero-flow-card" style="--c1:#10b981;--c2:#84cc16;--accent:#34d399" href="/studio.html">
+          <div class="hero-flow-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" style="color:#34d399"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            <span>AI Музыка</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= MODELS ======================= -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2 center">Все передовые нейросети для видео и картинок — <br class="br-lg">на одной платформе</h2>
+      <p class="section-sub">Veo 3, Kling, Seedance, Flux, GPT-4o и другие модели в одном окне: сравнивайте результаты, выбирайте лучший — <span class="yl">бесплатно</span> и без VPN.</p>
+
+      <div class="models-grid">
+        <div class="model-card grad-video">
+          <div class="model-card-head">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+            </div>
+            <div>
+              <h3>Нейросети для видео</h3>
+              <p>Генерация видео онлайн на базе лучших моделей — выбирайте под задачу:</p>
+              <div class="tiny">Kling AI&nbsp;&nbsp;·&nbsp;&nbsp;Runway&nbsp;&nbsp;·&nbsp;&nbsp;Hailuo AI&nbsp;&nbsp;·&nbsp;&nbsp;Veo 3&nbsp;&nbsp;·&nbsp;&nbsp;Grok&nbsp;&nbsp;·&nbsp;&nbsp;Midjourney&nbsp;&nbsp;·&nbsp;&nbsp;Seedance</div>
+            </div>
+          </div>
+          <a class="pill-btn" href="/studio.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spark text-yl"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+            Создать видео
+          </a>
+          <div class="chips chips-5">
+            <a href="/studio.html" class="chip"><span class="chip-brand">Kling</span><span class="chip-name">Kling AI</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Runway</span><span class="chip-name">Runway</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Hailuo</span><span class="chip-name">Hailuo AI</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Volcengine</span><span class="chip-name">Seedance</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Google</span><span class="chip-name">Veo 3</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Grok</span><span class="chip-name">Grok</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Midjourney</span><span class="chip-name">Midjourney</span></a>
+          </div>
+        </div>
+
+        <div class="model-card grad-image">
+          <div class="model-card-head">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            </div>
+            <div>
+              <h3>Нейросети для картинок</h3>
+              <p>Изображения любого стиля — от фотореализма до иллюстраций:</p>
+              <div class="tiny">Flux&nbsp;&nbsp;·&nbsp;&nbsp;DALL·E&nbsp;&nbsp;·&nbsp;&nbsp;GPT‑4o&nbsp;&nbsp;·&nbsp;&nbsp;Imagen&nbsp;&nbsp;·&nbsp;&nbsp;Midjourney</div>
+            </div>
+          </div>
+          <a class="pill-btn" href="/studio.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spark text-yl"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+            Создать картинку
+          </a>
+          <div class="chips chips-5">
+            <a href="/studio.html" class="chip"><span class="chip-brand">Flux</span><span class="chip-name">Schnell</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Flux</span><span class="chip-name">Dev</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Flux</span><span class="chip-name">Dev Lora</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Flux</span><span class="chip-name">1.1 Pro</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Flux</span><span class="chip-name">1.1 Pro Ultra</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Flux</span><span class="chip-name">Kontext</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">OpenAI</span><span class="chip-name">DALL·E</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">OpenAI</span><span class="chip-name">GPT-4o</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Google</span><span class="chip-name">Imagen</span></a>
+            <a href="/studio.html" class="chip"><span class="chip-brand">Midjourney</span><span class="chip-name">Midjourney</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FEATURES ======================= -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2 center">Видео, картинки и музыка — в одном окне</h2>
+
+      <div class="features">
+        <article class="feature reveal">
+          <div class="feature-media">
+            <video src="https://public.yolly.ai/text-to-video.webm" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <div class="feature-body">
+            <h3>Текст в видео</h3>
+            <p>Опишите сцену по-русски — нейросеть снимет её за вас: с движением камеры, светом и звуком. Больше не нужно ждать доступа к зарубежным сервисам — генерация видео работает прямо из России.</p>
+            <a class="link-arrow" href="/studio.html">Попробовать текст-в-видео →</a>
+          </div>
+        </article>
+
+        <article class="feature feature-rev reveal">
+          <div class="feature-media">
+            <video src="https://public.yolly.ai/photo-to-video.webm" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <div class="feature-body">
+            <h3>Фото в видео</h3>
+            <p>Оживите любую фотографию: нейросеть добавит движение, переходы и атмосферу. Одно фото или целая серия — на выходе цельный ролик.</p>
+            <a class="link-arrow" href="/studio.html">Оживить фото →</a>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-media">
+            <video src="https://public.yolly.ai/video-to-video.webm" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <div class="feature-body">
+            <h3>Видео в видео</h3>
+            <p>Перестилизуйте готовый ролик: другой жанр, другое настроение, спецэффекты — пара кликов, и у вашего видео новая жизнь.</p>
+            <a class="link-arrow" href="/studio.html">Ремикс видео →</a>
+          </div>
+        </article>
+
+        <article class="feature feature-rev reveal">
+          <div class="feature-media">
+            <img src="https://public.yolly.ai/text-to-image.png" alt="Текст в картинку" loading="lazy">
+          </div>
+          <div class="feature-body">
+            <h3>Текст в картинку</h3>
+            <p>Иллюстрации, обложки, концепт-арты по текстовому описанию. Сгенерированные картинки можно сразу превратить в видео — всё в одном сервисе.</p>
+            <a class="link-arrow" href="/studio.html">Создать картинку →</a>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-media">
+            <img src="https://public.yolly.ai/image-to-image.jpg" alt="Картинка в картинку" loading="lazy">
+          </div>
+          <div class="feature-body">
+            <h3>Картинка в картинку</h3>
+            <p>Новые вариации и стили на основе вашего изображения — с сохранением композиции. Идеально для итераций в дизайне.</p>
+            <a class="link-arrow" href="/studio.html">Попробовать image-to-image →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= WHAT ======================= -->
+  <section class="section">
+    <div class="container what-grid">
+      <div class="what-media reveal">
+        <img src="https://public.yolly.ai/aivideogen.png" alt="Yolly AI" loading="lazy">
+      </div>
+      <div class="what-body">
+        <h2 class="h2">Что умеет Yolly AI</h2>
+        <p class="what-text">Yolly AI — это видео, изображения и музыка, созданные нейросетями, в одном сервисе. Опишите идею по-русски — получите кинематографичный ролик в 4K, иллюстрацию любого стиля или полноценную песню с вокалом. Эта версия работает без VPN и <span class="yl">полностью бесплатно</span>.</p>
+        <ul class="what-list">
+          <li>
+            <div class="what-item-icon">🎬</div>
+            <div>
+              <b>Видео из текста и фото</b>
+              <p>Veo 3, Kling, Seedance 2.0, Wan, Runway — генерация роликов с движением камеры, реалистичной физикой и синхронным звуком. Из текстового описания или из вашей фотографии.</p>
+            </div>
+          </li>
+          <li>
+            <div class="what-item-icon">🎵</div>
+            <div>
+              <b>Музыка и песни с вокалом</b>
+              <p>Опишите настроение или вставьте свой текст — нейросеть сочинит и споёт готовый трек с обложкой. Русский вокал поддерживается: от лирики до рэпа.</p>
+            </div>
+          </li>
+          <li>
+            <div class="what-item-icon">🎨</div>
+            <div>
+              <b>Картинки любого стиля</b>
+              <p>Flux, GPT-4o, Nano Banana и другие модели: фотореализм, аниме, концепт-арт, иллюстрации для соцсетей и рекламы — по описанию или на основе вашего изображения.</p>
+            </div>
+          </li>
+          <li>
+            <div class="what-item-icon">🎁</div>
+            <div>
+              <b>Полностью бесплатно и навсегда</b>
+              <p>Без кредитов, лимитов и водяных знаков. Регистрация по e-mail за 30 секунд — и все модели открыты. Оплачивать не нужно ничего.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= STATS ======================= -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-kicker">Цифры</div>
+      <h2 class="h2 center">Yolly AI выбирают за скорость и простоту</h2>
+      <p class="section-sub">Сотни тысяч пользователей уже создают контент с нейросетями.</p>
+      <div class="stats">
+        <div class="stat reveal">
+          <div class="stat-top"><span class="stat-pre">Доверяют</span><span class="stat-num" data-count="9999">0</span><span class="stat-plus">+</span></div>
+          <div class="stat-label">Пользователей</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-top"><span class="stat-pre">Подключено</span><span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span></div>
+          <div class="stat-label">Нейросетей</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-top"><span class="stat-pre">Генерация за</span><span class="stat-num" data-count="60">0</span></div>
+          <div class="stat-label">Секунд</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= PROMPT CAROUSEL ======================= -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2 center">От промпта — к впечатляющему видео</h2>
+      <div class="prompt-card reveal">
+        <div class="prompt-left">
+          <h3>ASMR с резкой стеклянного фрукта</h3>
+          <div class="prompt-label">Prompt</div>
+          <pre class="prompt-code">Реалистичная 4K-съёмка: крупный план ножа, быстро разрезающего синюю стеклянную малину на деревянной разделочной доске. Каждый ломтик падает, пока нож движется дальше. Внутри ягода тоже из стекла. Звук в стиле ASMR.</pre>
+          <a class="pill-btn" id="usePrompt" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spark text-yl"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+            Использовать этот промпт
+          </a>
+        </div>
+        <div class="prompt-right">
+          <video src="https://public.yolly.ai/Glass-fruit-slicing-ASMR.webm" autoplay muted loop playsinline preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= REVIEWS ======================= -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-kicker">Отзывы</div>
+      <h2 class="h2 center">Что говорят пользователи из России</h2>
+      <p class="section-sub">Блогеры, дизайнеры и предприниматели — о работе с российской версией Yolly AI.</p>
+      <div class="reviews">
+        <div class="review reveal">
+          <div class="review-quote">«Ролик для Reels теперь готов за пять минут: пишу промпт, Veo 3 снимает, я публикую. То, на что раньше уходила неделя монтажа, делаю до завтрака. Kling выручает, когда нужна динамика.»</div>
+          <div class="review-author"><span class="avatar" style="--a:#a855f7">АС</span><div><b>Алексей Смирнов</b><span>Автор коротких видео</span></div></div>
+        </div>
+        <div class="review reveal">
+          <div class="review-quote">«Для клиентских проектов нам нужны и видео, и иллюстрации, и иногда джинглы. То, что всё это в одном сервисе с возможностью переключать модели, — огромная экономия времени. Качество Veo 3 клиенты принимают с первого раза.»</div>
+          <div class="review-author"><span class="avatar" style="--a:#ec4899">МК</span><div><b>Марина Ковалёва</b><span>Креативный директор агентства</span></div></div>
+        </div>
+        <div class="review reveal">
+          <div class="review-quote">«Скептически относился к ИИ-музыке, пока не попробовал: вставил свой текст — получил трек с русским вокалом, который не стыдно показать. Использую для демо и набросков аранжировок, экономит недели.»</div>
+          <div class="review-author"><span class="avatar" style="--a:#38bdf8">ДО</span><div><b>Дмитрий Орлов</b><span>Музыкант и битмейкер</span></div></div>
+        </div>
+        <div class="review reveal">
+          <div class="review-quote">«Промо-ролики для карточек товаров раньше заказывали у подрядчиков за недели. Сейчас делаем сами за вечер: фото товара → видео с движением камеры. Конверсия карточек выросла ощутимо.»</div>
+          <div class="review-author"><span class="avatar" style="--a:#34d399">ЕВ</span><div><b>Екатерина Волкова</b><span>Руководитель e-commerce</span></div></div>
+        </div>
+        <div class="review reveal">
+          <div class="review-quote">«Демо-видео продукта, иллюстрации для лендинга, даже джингл для рекламы — всё сделали в Yolly AI за выходные. Один сервис вместо пяти подписок, и оплата прошла обычной российской картой.»</div>
+          <div class="review-author"><span class="avatar" style="--a:#facc15">ИР</span><div><b>Игорь Романов</b><span>Основатель стартапа</span></div></div>
+        </div>
+        <div class="review reveal">
+          <div class="review-quote">«Веду несколько брендовых аккаунтов, контент нужен ежедневно. Утром генерирую пачку роликов и картинок под все площадки — стабильно и быстро, ничего не отваливается. Вовлечённость выросла заметно.»</div>
+          <div class="review-author"><span class="avatar" style="--a:#84cc16">АС2</span><div><b>Анна Соколова</b><span>SMM-менеджер</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= PRICING (FREE) ======================= -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="stats-kicker">Тарифы</div>
+      <h2 class="h2 center">Один тариф — <span class="grad-green">Бесплатно</span></h2>
+      <p class="section-sub">Никаких кредитов, подписок и скрытых платежей. Всё включено — навсегда.</p>
+      <div class="price-card reveal">
+        <div class="price-card-badge">ВСЁ ВКЛЮЧЕНО</div>
+        <h3>Бесплатный</h3>
+        <div class="price"><span class="price-num">0 ₽</span><span class="price-per">навсегда</span></div>
+        <ul class="price-list">
+          <li>Все модели видео: Veo 3, Kling, Seedance, Runway, Hailuo</li>
+          <li>Все модели картинок: Flux, GPT-4o, DALL·E, Imagen, Nano Banana</li>
+          <li>Музыка и песни с русским вокалом</li>
+          <li>Без кредитов и лимитов генераций</li>
+          <li>Без водяных знаков</li>
+          <li>Коммерческое использование включено</li>
+          <li>Работает без VPN, с российских IP</li>
+        </ul>
+        <a class="btn-start" href="/studio.html">Начать бесплатно</a>
+        <div class="price-note">Оплата не требуется. Карта, СБП или подписка не нужны.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FAQ ======================= -->
+  <section class="section">
+    <div class="container faq-wrap">
+      <div class="stats-kicker">FAQ</div>
+      <h2 class="h2 center">Частые вопросы о бесплатной версии Yolly AI</h2>
+      <p class="section-sub">Не нашли ответ? Напишите в поддержку — отвечаем быстро.</p>
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary><span class="faq-num">1</span>Что такое Yolly Free и чем она отличается от оригинала?</summary>
+          <div class="faq-a">Это полностью бесплатная версия платформы Yolly AI: те же нейросети для видео, картинок и музыки, но без кредитов, без подписки и без оплаты. Всё, что вы генерируете, принадлежит вам.</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-num">2</span>Нейросеть правда работает в России без VPN?</summary>
+          <div class="faq-a">Да, полностью. И сам сайт, и генерация, и хранение готовых работ доступны напрямую — VPN не нужен ни на телефоне, ни на компьютере.</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-num">3</span>Сколько стоит генерация?</summary>
+          <div class="faq-a">Ничего. Все модели, видео, картинки и музыка — бесплатно. Никаких кредитов, лимитов и скрытых платежей: платных тарифов просто нет.</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-num">4</span>Можно ли пользоваться бесплатно?</summary>
+          <div class="faq-a">Да, и без ограничений: без кредитов, без водяных знаков, без подписки. Просто опишите идею по-русски — и получайте результат. Регистрация по e-mail занимает 30 секунд.</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-num">5</span>Какие видео можно создавать?</summary>
+          <div class="faq-a">Ролики для соцсетей, рекламу, презентации товаров, анимацию фотографий, музыкальные клипы. Генерация работает и по тексту, и из фото. Промпты можно писать по-русски.</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-num">6</span>Можно ли использовать результаты в коммерческих целях?</summary>
+          <div class="faq-a">Да. Созданные видео, изображения и музыку можно бесплатно использовать в рекламе, соцсетях и коммерческих проектах — без доплат и отчислений.</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-num">7</span>Нужно ли что-то оплачивать или отменять?</summary>
+          <div class="faq-a">Нет. Подписки и платежей здесь нет — отменять нечего. Сервис бесплатный навсегда, и это не «пробный период».</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA ======================= -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>Создайте первое видео, картинку или песню — <span class="grad-green">бесплатно</span></h2>
+        <p>Регистрация за 30 секунд, никаких кредитов и платежей, работает без VPN. Опишите идею — нейросеть сделает остальное.</p>
+        <a class="btn-start big" href="/studio.html">Начать бесплатно</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/">
+          <img src="/logo.png" alt="Yolly AI" class="logo-img">
+          <span class="logo-name">Yolly AI</span>
+          <span class="logo-free">FREE</span>
+        </a>
+        <p>Бесплатная версия Yolly AI: нейросети для видео, картинок и музыки — без VPN, без оплаты, без водяных знаков.</p>
+        <a class="footer-mail" href="mailto:hi@yolly.ai">hi@yolly.ai</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">О нас</div>
+        <a href="#pricing">Тарифы — бесплатно</a>
+        <a href="/studio.html">Студия генерации</a>
+        <a href="/studio.html">Мои работы</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Ресурсы</div>
+        <a href="/studio.html">ИИ генератор видео</a>
+        <a href="/studio.html">ИИ генератор анимации</a>
+        <a href="/studio.html">ИИ генератор изображений</a>
+        <a href="/studio.html">Видео в видео</a>
+        <a href="/studio.html">Липсинк-генератор</a>
+        <a href="/studio.html">Песня из текста</a>
+        <a href="/studio.html">Удаление вокала (AI)</a>
+        <a href="/studio.html">Библиотека промптов</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Модели</div>
+        <a href="/studio.html">Nano Banana</a>
+        <a href="/studio.html">Nano Banana Pro</a>
+        <a href="/studio.html">GPT Image 2</a>
+        <a href="/studio.html">Seedance 2.0</a>
+        <a href="/studio.html">Kling 2.5 Turbo</a>
+        <a href="/studio.html">Veo 3.1</a>
+        <a href="/studio.html">Veo 3</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year">2026</span> Yolly Free. Бесплатная копия.</div>
+      <div class="footer-legal">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия обслуживания</a>
+      </div>
+      <div class="footer-disclaimer">Независимая бесплатная копия для демонстрации. Не является официальным сайтом yolly.ai.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================= MOBILE BOTTOM NAV ======================= -->
+<nav class="mobile-nav">
+  <a href="/studio.html" class="active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+    <span>ИИ Видео</span>
+  </a>
+  <a href="/studio.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+    <span>ИИ Изображение</span>
+  </a>
+  <a href="/studio.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+    <span>ИИ Музыка</span>
+  </a>
+  <a href="/studio.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>Аккаунт</span>
+  </a>
+</nav>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
